@@ -1,0 +1,33 @@
+/* Write your code here. */
+* {
+  font-family: Roboto;
+}
+.navBar {
+  background-color: #9796f0;
+  background-size: cover;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-img {
+  height: 60px;
+}
+.logo-name {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.score-container {
+  display: flex;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.topScore {
+  margin-left: 15px;
+}

@@ -1,0 +1,12 @@
+/* Write your code here. */
+.button-container {
+  background-color: #9796f0;
+  border: 0px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+.each-emoji-size {
+  height: 100px;
+  margin: 10px;
+}
