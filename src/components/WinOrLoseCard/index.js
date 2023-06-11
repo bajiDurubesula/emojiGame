@@ -3,7 +3,7 @@ import './index.css'
 
 const WinOrLoseCard = props => {
   const {score, playAgainClicked} = props
-  const result = score === 12 ? 'You Won' : 'You Lose'
+  const result = score === 11 ? 'You Won' : 'You Lose'
 
   const playAgain = () => {
     playAgainClicked()
