@@ -21,19 +21,15 @@ class EmojiGame extends Component {
     const {isUnique} = this.state
     const {emojisList} = this.props
     if (!isUnique.includes(id)) {
-      console.log(isUnique.length)
-      console.log(emojisList.length - 1)
       if (isUnique.length === emojisList.length - 1) {
         this.setState({isGameEnd: true})
       } else {
-        console.log('dsfd')
         this.setState(prevState => ({
           score: prevState.score + 1,
           isUnique: [...prevState.isUnique, id],
         }))
       }
     } else {
-      console.log('kjhg')
       this.setState(prevState => ({isGameEnd: !prevState.isGameEnd}))
     }
   }
@@ -57,6 +53,8 @@ class EmojiGame extends Component {
 
   playAgainClicked = () => {
     const {score, topScore} = this.state
+    console.log(score)
+    console.log(topScore)
     if (score > topScore) {
       this.setState({score: 0, topScore: score, isUnique: [], isGameEnd: false})
     } else {
